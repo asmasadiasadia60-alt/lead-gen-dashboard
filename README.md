@@ -1,78 +1,69 @@
-# LeadGen Dashboard 🚀
+# Lead Generation Dashboard
 
-Ek modern aur clean **Dark-Themed Lead Generation Dashboard** jo lead data ko table format mein show karta hai, live search aur status filtering ke saath.
-
----
-
-## ✨ Features
-
-- 🌓 **Modern Dark Theme:** Sleek slate/zinc color palette with high-contrast text and glowing accents.
-- 📋 **Leads Data Table:** 
-  - Lead Name (with initials avatar)
-  - Email Address (clickable `mailto:`)
-  - Status Badge with color coding (`New`, `Contacted`, `Qualified`, `Proposal`, `Lost`)
-  - Action buttons (Delete lead)
-- 🔍 **Live Search:** Name ya Email type karte hi real-time instant search.
-- 🏷️ **Status Filter:** Dropdown ya summary cards par click karke specific status filter karein (`All`, `New`, `Contacted`, `Qualified`, `Proposal`, `Lost`).
-- 📊 **Quick Metrics Bar:** Total leads aur status-wise lead count ka live overview.
-- ➕ **Add New Lead Modal:** Form ke zariye naya lead add karne ki suvidha.
-- 💾 **Local Storage Persistence:** Aapka data browser mein safe rehta hai (with "Reset Samples" button).
-- 📱 **Fully Responsive:** Mobile, tablet, aur desktop screen par perfectly adapt hota hai.
+> **Solves the overhead of complex, bloated CRM setups by providing a lightweight, zero-database dashboard to capture, organize, and track sales leads directly in the browser.**
 
 ---
 
-## 5 Sample Leads Included
+## Overview
 
-| # | Name | Email | Status |
-|---|------|-------|--------|
-| 1 | Sarah Jenkins | `sarah.jenkins@acmecorp.com` | **Qualified** |
-| 2 | Alex Rivera | `alex.rivera@techflow.io` | **Contacted** |
-| 3 | Priya Sharma | `priya.sharma@innovate.co` | **New** |
-| 4 | Michael Chen | `m.chen@nexusmedia.com` | **Proposal** |
-| 5 | Fatima Zahra | `fatima.z@cloudscale.net` | **Lost** |
+The **Lead Generation Dashboard** is a clean, lightweight web application built with vanilla web technologies (HTML, CSS, JavaScript) and a minimal Node.js backend. It offers small businesses and independent sales professionals a simple, fast way to capture prospect inquiries, organize lead stages, and monitor conversion pipelines without requiring external database configuration or heavy frontend frameworks. All data is persisted directly on the client side using the browser's `localStorage`.
 
 ---
 
-## 🚀 Setup & Run Steps (Chalaane ka Tareeqa)
+## Features
 
-Aap is app ko **2 aasan tareeqon** se chala sakte hain:
-
-### Option 1: Direct Browser Open (Zero Install - Sabse Asan)
-1. Is folder (`lead-gen-dashboard`) mein jaayein.
-2. `index.html` file par double-click karein.
-3. App aapke default web browser (Chrome, Edge, Firefox) mein direct chal jaegi!
+- **Lead Ingestion & Management**: Add, update, and manage prospect contact details, inquiry sources, and deal values.
+- **Client-Side Persistence**: Stores and retrieves all lead records instantly using browser `localStorage`—no database setup required.
+- **Status & Pipeline Tracking**: Categorize leads across key stages (e.g., *New*, *Contacted*, *Qualified*, *Closed*).
+- **Search & Filter Controls**: Quickly find and filter prospects by name, company, status, or date.
+- **Responsive Dashboard UI**: Fully responsive, clean interface built with pure CSS for seamless desktop and mobile use.
+- **Lightweight Backend**: Minimal Node.js server (`server.js`) to serve static assets and handle routing.
 
 ---
 
-### Option 2: Local Node.js Server se Chalaana
-Agar aap local development server run karna chahte hain:
+## Quick Start
 
-1. Terminal / Command Prompt open karein aur is folder mein jaayein:
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16.0.0 or higher)
+- [npm](https://www.npmjs.com/)
+
+### Installation & Setup
+
+1. **Clone the repository:**
    ```bash
-   cd "c:\Users\Mufti Saood\Documents\lead-gen-dashboard"
+   git clone https://github.com/your-username/lead-gen-dashboard.git
    ```
 
-2. Server start karein:
+2. **Navigate into the project directory:**
+   ```bash
+   cd lead-gen-dashboard
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Start the server:**
    ```bash
    npm start
    ```
-   *(ya direct `node server.js` run karein)*
+   *(or run `node server.js`)*
 
-3. Browser mein open karein:
-   ```
-   http://localhost:3000
-   ```
+5. **Open the application:**
+   Visit [http://localhost:3000](http://localhost:3000) in your web browser.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 lead-gen-dashboard/
-├── index.html        # Main dashboard UI structure
-├── style.css         # Dark theme styles & responsive design
-├── app.js            # Leads logic, live search, status filter, local storage
-├── server.js         # Lightweight zero-dependency Node HTTP server
-├── package.json      # NPM script configuration (npm start)
-└── README.md         # Documentation & setup guide
+├── index.html       # Main user interface and dashboard layout
+├── style.css        # CSS styles for layout, themes, and responsiveness
+├── app.js           # Client-side interactivity, state handling, and localStorage logic
+├── server.js        # Node.js server script to serve application files
+├── package.json     # Project metadata, dependencies, and execution scripts
+└── README.md        # Project documentation
 ```
