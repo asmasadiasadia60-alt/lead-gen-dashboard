@@ -1,0 +1,16 @@
+{
+  "name": "lead-gen-dashboard",
+  "version": "1.0.0",
+  "description": "Simple and modern dark-themed lead generation dashboard with search and status filters",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "lead-gen",
+    "dashboard",
+    "dark-theme"
+  ],
+  "author": "",
+  "license": "MIT"
+}
